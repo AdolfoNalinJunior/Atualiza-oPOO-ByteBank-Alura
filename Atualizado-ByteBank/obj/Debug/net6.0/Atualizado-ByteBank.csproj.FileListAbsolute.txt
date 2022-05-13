@@ -1,0 +1,15 @@
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\bin\Debug\net6.0\Atualizado-ByteBank.exe
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\bin\Debug\net6.0\Atualizado-ByteBank.deps.json
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\bin\Debug\net6.0\Atualizado-ByteBank.runtimeconfig.json
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\bin\Debug\net6.0\Atualizado-ByteBank.dll
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\bin\Debug\net6.0\Atualizado-ByteBank.pdb
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.csproj.AssemblyReference.cache
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.AssemblyInfoInputs.cache
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.AssemblyInfo.cs
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.csproj.CoreCompileInputs.cache
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.dll
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\refint\Atualizado-ByteBank.dll
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.pdb
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\Atualizado-ByteBank.genruntimeconfig.cache
+C:\C# POO-Atualizado\Atualizado-ByteBank\Atualizado-ByteBank\obj\Debug\net6.0\ref\Atualizado-ByteBank.dll
