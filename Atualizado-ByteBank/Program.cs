@@ -16,6 +16,9 @@ conta2.numero_agencia = 23;
 conta2.nome_agencia = "Banco Central";
 conta2.saldo = 100;
 
-conta1 = conta2;
+Console.WriteLine("Saldo Amanda pré-saque " + conta2.saldo);
+conta2.Sacar(-100);
+Console.WriteLine("Saldo Amanda pós-saque " + conta2.saldo);
 
+conta1 = conta2;
 Console.WriteLine(conta1 == conta2);
