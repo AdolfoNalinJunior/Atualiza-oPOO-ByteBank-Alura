@@ -9,15 +9,12 @@ conta1.numero_agencia = 23;
 conta1.nome_agencia = "Banco Central";
 conta1.saldo = 100;
 
-ContaCorrente conta2 = new ContaCorrente();
-conta2.titular = "Amanda Silva ";
-conta2.conta = "10106-x ";
-conta2.numero_agencia = 321;
-conta2.nome_agencia = "Banco Central ";
-conta2.saldo = 100;
-
-ContaCorrente conta3 = new ContaCorrente();
-
+//ContaCorrente conta2 = new ContaCorrente();
+//conta2.titular = "Amanda Silva ";
+//conta2.conta = "10106-x ";
+//conta2.numero_agencia = 321;
+//conta2.nome_agencia = "Banco Central ";
+//conta2.saldo = 100;
 
 //Console.WriteLine("Titular: " + conta1.titular);
 //Console.WriteLine("Conta: " + conta1.conta);
@@ -25,8 +22,11 @@ ContaCorrente conta3 = new ContaCorrente();
 //Console.WriteLine("Nome da Agencia: " + conta1.nome_agencia);
 //Console.WriteLine("Saldo: " + conta1.saldo);
 
-Console.WriteLine("Titular: " + conta3.titular);
-Console.WriteLine("Conta: " + conta3.conta);
-Console.WriteLine("Número Agencia: " + conta3.numero_agencia);
-Console.WriteLine("Nome da Agencia: " + conta3.nome_agencia);
-Console.WriteLine("Saldo: " + conta3.saldo);
+Console.WriteLine(conta1.caracter_especial);
+
+double saldo = 100;
+double saldo2 = conta1.saldo;
+conta1.saldo = 200;
+
+Console.WriteLine(saldo == conta1.saldo);
+Console.WriteLine(saldo == saldo2);
