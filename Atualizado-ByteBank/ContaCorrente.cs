@@ -24,5 +24,31 @@
                 return true;
             }
         }
+
+        public void Depositar(double valor)
+        {
+            if (valor <= 0)
+            {
+                Console.WriteLine("Adicione um valor que seja maior que 0 ");
+            }
+
+            else
+            {
+                saldo += valor;
+            }
+        }
+
+        public void Tranferir(double valor)
+        {
+            if (saldo < valor)
+            {
+                Console.WriteLine("Trasferência não executada, por falta de saldo");
+            }
+            else
+            {
+                saldo -= valor;
+            }
+        }
+
     }
 }
