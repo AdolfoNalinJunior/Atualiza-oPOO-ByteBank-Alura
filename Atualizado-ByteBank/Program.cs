@@ -16,15 +16,14 @@ conta2.numero_agencia = 23;
 conta2.nome_agencia = "Banco Central";
 conta2.saldo = 100;
 
-Console.WriteLine("Saldo Amanda pré-saque " + conta2.saldo);
-conta2.Sacar(50);
-Console.WriteLine("Saldo Amanda pós-saque " + conta2.saldo);
+Console.WriteLine("Saldo da conta do André " + conta1.saldo);
+Console.WriteLine("Saldo da conta da Amanada " + conta2.saldo);
 
-conta2.Depositar(0);
+bool transferencia = conta1.Tranferir(50, conta2);
 
-Console.WriteLine("Saldo da Amanda pós-deposito " + conta2.saldo);
+Console.WriteLine("Saldo da conta do André " + conta1.saldo);
+Console.WriteLine("Saldo da conta da Amanada " + conta2.saldo);
 
-Console.WriteLine(conta2.saldo);
+Console.WriteLine("Transferência foi realizada? " + transferencia);
 
-conta1 = conta2;
-Console.WriteLine(conta1 == conta2);
+conta1.GetInformaçõesConta();
