@@ -1,8 +1,10 @@
-﻿namespace Atualizado_ByteBank
+﻿using Atualizado_ByteBank.Titular;
+
+namespace Atualizado_ByteBank
 {
     public class ContaCorrente
     {
-        public string titular;
+        public Cliente titular;
         public string conta;
         public int numero_agencia;
         public string nome_agencia;
@@ -43,15 +45,6 @@
                 destino.saldo += valor;
                 return true;
             }
-        }
-
-        public void GetInformaçõesConta()
-        {
-            Console.WriteLine("Titular: " + this.titular);
-            Console.WriteLine("Conta: " + this.conta);
-            Console.WriteLine("Número Agência: " + this.numero_agencia);
-            Console.WriteLine("Nome Agência: " + this.nome_agencia);
-            Console.WriteLine("Saldo " + this.saldo);
         }
     }
 }
