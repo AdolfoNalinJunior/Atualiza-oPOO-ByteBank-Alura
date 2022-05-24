@@ -11,12 +11,5 @@ namespace Atualizado_ByteBank.Titular
         public string nome;
         public string cpf;
         public string profissao;
-
-        public void GetInformacoesCliente()
-        {
-            Console.WriteLine("Nome: " + this.nome);
-            Console.WriteLine("CPF: " + this.cpf);
-            Console.WriteLine("Profissão: " + this.profissao);
-        }
     }
 }

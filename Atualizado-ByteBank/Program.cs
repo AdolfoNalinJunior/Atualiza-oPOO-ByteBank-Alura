@@ -1,7 +1,7 @@
 ﻿using Atualizado_ByteBank;
 using Atualizado_ByteBank.Titular;
 
-//Console.WriteLine("Boa Vindas, ao seu banco, ByteBank!");
+Console.WriteLine("Boa Vindas, ao seu banco, ByteBank!");
 
 //ContaCorrente conta1 = new ContaCorrente();
 //conta1.titular = "André Silva ";
@@ -29,16 +29,22 @@ using Atualizado_ByteBank.Titular;
 
 //conta1.GetInformaçõesConta();
 
-Cliente cliente = new Cliente();
-cliente.nome = "Adolfo Nalin Junior ";
-    cliente.cpf = "12344566778 ";
-    cliente.profissao = "Programador ";
+//Cliente cliente = new Cliente();
+//cliente.nome = "Adolfo Nalin Junior ";
+//cliente.cpf = "12344566778 ";
+//cliente.profissao = "Programador ";
 
 ContaCorrente conta3 = new ContaCorrente();
-conta3.titular = cliente;
+conta3.titular = new Cliente();
+conta3.titular.nome = "Adolfo Nalin Junior ";
+conta3.titular.cpf = "12344566778 ";
+conta3.titular.profissao = "Programador ";
 conta3.conta = "251325-X";
 conta3.numero_agencia = 35;
 conta3.nome_agencia = "Agencia Central ";
 
-Console.WriteLine(cliente.nome);
 Console.WriteLine(conta3.titular.nome);
+if(conta3.titular == null)
+{
+    Console.WriteLine("O campo titular está nulo ");
+}  
