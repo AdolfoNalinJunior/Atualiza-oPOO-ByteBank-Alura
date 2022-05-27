@@ -34,17 +34,22 @@ Console.WriteLine("Boa Vindas, ao seu banco, ByteBank!");
 //cliente.cpf = "12344566778 ";
 //cliente.profissao = "Programador ";
 
-ContaCorrente conta3 = new ContaCorrente();
-conta3.titular = new Cliente();
-conta3.titular.nome = "Adolfo Nalin Junior ";
-conta3.titular.cpf = "12344566778 ";
-conta3.titular.profissao = "Programador ";
-conta3.conta = "251325-X";
-conta3.numero_agencia = 35;
-conta3.nome_agencia = "Agencia Central ";
+//ContaCorrente conta3 = new ContaCorrente();
+//conta3.titular = new Cliente();
+//conta3.titular.nome = "Adolfo Nalin Junior ";
+//conta3.titular.cpf = "12344566778 ";
+//conta3.titular.profissao = "Programador ";
+//conta3.conta = "251325-X";
+//conta3.numero_agencia = 35;
+//conta3.nome_agencia = "Agencia Central ";
 
-Console.WriteLine(conta3.titular.nome);
-if(conta3.titular == null)
-{
-    Console.WriteLine("O campo titular está nulo ");
-}  
+//Console.WriteLine(conta3.titular.nome);
+//if(conta3.titular == null)
+//{
+//    Console.WriteLine("O campo titular está nulo ");
+//}  
+
+ContaCorrente conta4 = new ContaCorrente();
+
+conta4.DefinirSaldo(20);
+

@@ -8,7 +8,7 @@ namespace Atualizado_ByteBank
         public string conta;
         public int numero_agencia;
         public string nome_agencia;
-        public double saldo;
+        private double saldo;
 
         public bool Sacar(double valor)
         {
@@ -44,6 +44,18 @@ namespace Atualizado_ByteBank
                 saldo -= valor;
                 destino.saldo += valor;
                 return true;
+            }
+        }
+
+        public void DefinirSaldo(double valor)
+        {
+            if (valor < 0)
+            {
+                return;
+            }
+            else
+            {
+                saldo += valor;
             }
         }
     }
