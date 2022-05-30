@@ -51,5 +51,6 @@ Console.WriteLine("Boa Vindas, ao seu banco, ByteBank!");
 
 ContaCorrente conta4 = new ContaCorrente();
 
-conta4.DefinirSaldo(20);
+conta4.Saldo = 10;
 
+Console.WriteLine("Saldo: " + conta4.Saldo);

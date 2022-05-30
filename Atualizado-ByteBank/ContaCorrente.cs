@@ -47,16 +47,44 @@ namespace Atualizado_ByteBank
             }
         }
 
-        public void DefinirSaldo(double valor)
+        //public void SetSando(double valor)
+        //{
+        //    if (valor < 0)
+        //    {
+        //        return;
+        //    }
+        //    else
+        //    {
+        //        saldo += valor;
+        //    }
+        //}
+
+        public double Saldo
         {
-            if (valor < 0)
+            get
             {
-                return;
+                return saldo;
             }
-            else
+
+            set
             {
-                saldo += valor;
+                if (value < 0)
+                {
+                    return;
+                }
+                else
+                {
+                    saldo += value;
+                }
             }
+        }
+
+
+        public double GetSaldo()
+        {
+            return saldo;
         }
     }
 }
+// Quando o método vai manipular o ele é Set é e void
+// Quando o método vai retornar um tipo ele é um Get
