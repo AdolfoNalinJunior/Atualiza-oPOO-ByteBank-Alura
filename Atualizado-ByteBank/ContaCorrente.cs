@@ -4,15 +4,34 @@ namespace Atualizado_ByteBank
 {
     public class ContaCorrente
     {
-        public Cliente titular;
-        public string conta;
-        public int numero_agencia;
-        public string nome_agencia;
+        public Cliente Titular { get; set; }
+        public string Conta { get; set; }
+        public int Numero_Agencia { get; set; }
+        public string Nome_Agencia { get; set; }
         private double saldo;
+        public double Saldo
+        {
+            get
+            {
+                return saldo;
+            }
+
+            set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
+                else
+                {
+                    saldo += value;
+                }
+            }
+        }
 
         public bool Sacar(double valor)
         {
-            if(saldo < valor)
+            if (saldo < valor)
             {
                 return false;
             }
@@ -45,44 +64,6 @@ namespace Atualizado_ByteBank
                 destino.saldo += valor;
                 return true;
             }
-        }
-
-        //public void SetSando(double valor)
-        //{
-        //    if (valor < 0)
-        //    {
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        saldo += valor;
-        //    }
-        //}
-
-        public double Saldo
-        {
-            get
-            {
-                return saldo;
-            }
-
-            set
-            {
-                if (value < 0)
-                {
-                    return;
-                }
-                else
-                {
-                    saldo += value;
-                }
-            }
-        }
-
-
-        public double GetSaldo()
-        {
-            return saldo;
         }
     }
 }
