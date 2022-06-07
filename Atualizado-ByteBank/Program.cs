@@ -59,3 +59,5 @@ Console.WriteLine(conta4.Titular.Nome);
 Console.WriteLine(conta4.Saldo);
 Console.WriteLine(conta4.Numero_Agencia);
 Console.WriteLine(conta4.Conta);
+
+Console.WriteLine(ContaCorrente.TotalContasCriadas);

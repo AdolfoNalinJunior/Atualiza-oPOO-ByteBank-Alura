@@ -65,10 +65,13 @@ namespace Atualizado_ByteBank
             }
         }
 
+        public static int TotalContasCriadas { get; protected set; }
         public ContaCorrente(int numero_agencia, string conta)
         {
             Numero_Agencia = numero_agencia;
             Conta = conta;
+
+            TotalContasCriadas++;
         }
 
         public bool Sacar(double valor)
