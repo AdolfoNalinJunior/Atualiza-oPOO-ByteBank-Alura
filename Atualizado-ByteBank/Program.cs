@@ -8,22 +8,22 @@ Console.WriteLine("Boa Vindas, ao seu banco, ByteBank!");
 //conta1.conta = "10123-x";
 //conta1.numero_agencia = 23;
 //conta1.nome_agencia = "Banco Central";
-//conta1.saldo = 100;
+//conta1._saldo = 100;
 
 //ContaCorrente conta2 = new ContaCorrente();
 //conta2.titular = "André silva ";
 //conta2.conta = "10123-x";
 //conta2.numero_agencia = 23;
 //conta2.nome_agencia = "Banco Central";
-//conta2.saldo = 100;
+//conta2._saldo = 100;
 
-//Console.WriteLine("Saldo da conta do André " + conta1.saldo);
-//Console.WriteLine("Saldo da conta da Amanada " + conta2.saldo);
+//Console.WriteLine("Saldo da conta do André " + conta1._saldo);
+//Console.WriteLine("Saldo da conta da Amanada " + conta2._saldo);
 
 //bool transferencia = conta1.Tranferir(50, conta2);
 
-//Console.WriteLine("Saldo da conta do André " + conta1.saldo);
-//Console.WriteLine("Saldo da conta da Amanada " + conta2.saldo);
+//Console.WriteLine("Saldo da conta do André " + conta1._saldo);
+//Console.WriteLine("Saldo da conta da Amanada " + conta2._saldo);
 
 //Console.WriteLine("Transferência foi realizada? " + transferencia);
 
@@ -49,7 +49,13 @@ Console.WriteLine("Boa Vindas, ao seu banco, ByteBank!");
 //    Console.WriteLine("O campo titular está nulo ");
 //}  
 
-ContaCorrente conta4 = new ContaCorrente();
-conta4.Saldo = 10;
+Cliente sarah = new Cliente();
+sarah.Nome = "Sara Silva ";
 
+ContaCorrente conta4 = new ContaCorrente(235, "125358-x");
+conta4.Saldo = 10;
+conta4.Titular = sarah; 
+Console.WriteLine(conta4.Titular.Nome);
 Console.WriteLine(conta4.Saldo);
+Console.WriteLine(conta4.Numero_Agencia);
+Console.WriteLine(conta4.Conta);

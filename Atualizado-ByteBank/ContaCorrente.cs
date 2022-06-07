@@ -5,15 +5,51 @@ namespace Atualizado_ByteBank
     public class ContaCorrente
     {
         public Cliente Titular { get; set; }
-        public string Conta { get; set; }
-        public int Numero_Agencia { get; set; }
+        private string _conta;
+        public string Conta
+        {
+            get
+            {
+                return _conta;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    Console.WriteLine("Por favor, digite uma conta válida!! ");
+                }
+                else
+                {
+                    _conta = value;
+                }
+            }
+        }
+        private int _numero_agencia;
+        public int Numero_Agencia 
+        { get
+            {
+                return _numero_agencia;
+            }
+            set 
+            {
+                if (value <= 0)
+                {
+                    Console.WriteLine("Digite um número de agência válido! " );
+                }
+                else
+                {
+                    _numero_agencia = value;
+                }
+            }
+        }
         public string Nome_Agencia { get; set; }
-        private double saldo;
+       
+        private double _saldo;
         public double Saldo
         {
             get
             {
-                return saldo;
+                return _saldo;
             }
 
             set
@@ -24,14 +60,20 @@ namespace Atualizado_ByteBank
                 }
                 else
                 {
-                    saldo += value;
+                    _saldo += value;
                 }
             }
         }
 
+        public ContaCorrente(int numero_agencia, string conta)
+        {
+            Numero_Agencia = numero_agencia;
+            Conta = conta;
+        }
+
         public bool Sacar(double valor)
         {
-            if (saldo < valor)
+            if (_saldo < valor)
             {
                 return false;
             }
@@ -41,27 +83,27 @@ namespace Atualizado_ByteBank
             }
             else
             {
-                saldo -= valor;
+                _saldo -= valor;
                 return true;
             }
         }
 
         public void Depositar(double valor)
         {
-            saldo += valor;
+            _saldo += valor;
         }
 
         public bool Tranferir(double valor, ContaCorrente destino)
         {
-            if (saldo < valor)
+            if (_saldo < valor)
             {
-                Console.WriteLine("Trasferência não executada, por falta de saldo");
+                Console.WriteLine("Trasferência não executada, por falta de _saldo");
                 return false;
             }
             else
             {
-                saldo -= valor;
-                destino.saldo += valor;
+                _saldo -= valor;
+                destino._saldo += valor;
                 return true;
             }
         }
