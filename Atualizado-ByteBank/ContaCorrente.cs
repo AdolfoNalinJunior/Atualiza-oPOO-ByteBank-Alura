@@ -66,8 +66,10 @@ namespace Atualizado_ByteBank
         }
 
         public static int TotalContasCriadas { get; protected set; }
-        public ContaCorrente(int numero_agencia, string conta)
+        public ContaCorrente(Cliente titular, int numero_agencia, string nome_agencia, string conta)
         {
+            Titular = titular;
+            Nome_Agencia = nome_agencia;
             Numero_Agencia = numero_agencia;
             Conta = conta;
 
